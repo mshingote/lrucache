@@ -16,8 +16,7 @@ namespace cache {
 	template<typename key_t, typename value_t>
 	class lru_cache {
 	public:
-		lru_cache(size_t max_size)
-		{
+		lru_cache(size_t max_size) {
 			m_cache_max_limit = max_size;
 		}
 		void put(const key_t& key, const value_t& value) {
